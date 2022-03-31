@@ -6,9 +6,8 @@
 
 
 </head>
-
+<script src="script.js"></script>
 <link rel="stylesheet" href="style.css">
-<script src="script.js" charset="utf-8"></script>
 
 <body>
 <div class="grid">
@@ -19,31 +18,25 @@
   </div>
 
   <div id="itemform">
-    <form>
       <label for="iname">
         Item Name:&nbsp&nbsp&nbsp
-        <input type="text">
       </label>
-      <br>
-      <br>
-      <label for="iprice">
-        Item Price :&nbsp&nbsp&nbsp
-        <input type="text">
-      </label>
+      <select name="iname" id="iname" class="uinput">
+        <option value="dosa">Dosa ₹100</option>
+        <option value="cholebhature">Chole Bhature ₹60</option>
+      </select>
       <br>
       <br>
       <label for="iquantity">
         Quantity: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <input type="number">
+        <input type="number" id="iquantity" class="uinput">
       </label>
       <br>
       <br>
-      <input type="submit" value="Add Item">
-    </form>
+      <input type="submit" value="Add Item" id="submit" onclick="addItem()">
   </div>
 
-  <div id="cart">
-
+  <div id="cartList">
   </div>
 </div>
 

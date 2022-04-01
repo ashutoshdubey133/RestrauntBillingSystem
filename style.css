@@ -1,53 +1,57 @@
 #title{
-  width: 1520px;
   background-color: #5c007a;
   color: white;
   text-align: center;
-  padding: 20px;
   font-family: "Georgia";
-  font-size: 130%;
+  font-size: 80%;
   grid-column: 1/3;
+  padding: 1%;
+  margin-left: 0.3%;
 }
 
 html, body {
-  margin:0px;
+  margin:0%;
 }
 
 .grid{
   display: grid;
-  grid-template-columns: 570px 955px;
-  grid-template-rows: 139px 450px 100px;
-  grid-gap: 5px;
+  grid-template-columns: 40% 59%;
+    /* grid-template-columns: 40% 59%; */
+  grid-template-rows: 15vh 65vh 18vh;
+  /* grid-template-rows: 30% 130% 38%; */
+  grid-gap: 0.5%;
 }
 
 #itemform{
   background-color: #ae52d4;
   text-align: center;
-  padding: 65px;
+  padding: 10%;
   color: white;
-  font-size: 24px;
-  border-radius: 15px;
-  margin-left: 5px;
+  font-size: 1em;
+  border-radius: 2%;
+  margin-left: 0.4%;
 }
 
 #cartList{
   background-color: #7b1fa2;
   color: white;
   text-align: center;
-  font-size: 18px;
-  border-radius: 15px;
+  /* font-size: 18px; */
+  border-radius: 2%;
 }
 
 .uinput{
-  width: 250px;
-  height: 20px;
+  width: 50%;
+  height: 5%;
 }
 
 #total{
-  background-color: #9C18E7;
+  background-color: #5c007a;
   color: white;
   grid-column: 1/3;
-  border-radius: 15px;
+  border-radius: 2.4%;
   text-align: center;
-  margin-left: 5px;
+  margin-left: 0.4%;
+  font-family: "Georgia";
+  padding-top: 2.1% ;
 }

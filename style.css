@@ -56,3 +56,13 @@ html, body {
   font-family: "Georgia";
   padding-top: 4vh ;
 }
+
+#submit{
+  background-color: #5c007a;
+  width: 10em;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 1vw;
+  font-family: "Georgia";
+}

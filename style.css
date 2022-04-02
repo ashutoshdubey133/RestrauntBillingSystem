@@ -42,6 +42,7 @@ html, body {
   /* font-size: 18px; */
   border-radius: 0.7vw;
   margin-right: 0.2vw;
+  overflow: auto;
 }
 
 #total{

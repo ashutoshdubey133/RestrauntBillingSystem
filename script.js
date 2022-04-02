@@ -1,4 +1,3 @@
-var i =1;
 var price = [];
 price["dosa"] = 100;
 price["cholebhature"] = 60;
@@ -6,10 +5,6 @@ price["cholebhature"] = 60;
 var total = 0;
 
 function addItem(){
-  if(i>6){
-    return;
-  }
-  i++;
 
   const ioptions = document.getElementById("iname");
   const iname = ioptions.value;
@@ -22,7 +17,7 @@ function addItem(){
   background-color: #ffc4ff;
   margin-left: 1.2vw;
   margin-right: 1.2vw;
-  width: 57vw;
+  width: 55vw;
   height: 8vh;
   margin-top: 1.6vh;
   border-radius: 3vh;

@@ -3,8 +3,12 @@ price["dosa"] = 100;
 price["cholebhature"] = 60;
 
 var quantity = [];
-quantity["dosa"] = 0;
-quantity["cholebhature"] = 0;
+priceinit();
+
+function priceinit(){
+  quantity["dosa"] = 0;
+  quantity["cholebhature"] = 0;
+}
 
 var total = 0;
 
@@ -40,7 +44,7 @@ function addItem(iname,iprice,iquantity){
   margin-top: 1.6vh;
   border-radius: 3vh;
   color: black;
-  font-size: 1em;
+  font-size: 2.5vh;
   padding-top: 1vh;
   font-family: "Georgia";
   font-weight: bold;
@@ -54,17 +58,6 @@ function addItem(iname,iprice,iquantity){
   const ptext = document.createTextNode(iname.toUpperCase() +" "+iprice + " " + "Quantity: " + quantity[iname]);
   para.appendChild(ptext);
   itembg.appendChild(para);
-  const delbutton = document.createElement("button");
-  delbutton.setAttribute("type","button");
-  const deleteIcon = document.createElement("img");
-  deleteIcon.setAttribute("src","https://img.icons8.com/color/48/000000/filled-trash.png");
-  delbutton.style.cssText = `
-  margin-right: 3vw;
-  height: 8vh;
-  border-radius: 9%;
-  `;
-  delbutton.appendChild(deleteIcon);
-  itembg.appendChild(delbutton);
   cartList.appendChild(itembg);
 }
 
@@ -72,4 +65,16 @@ function updateItem(iname,iprice,iquantity){
   quantity[iname] += Number(iquantity);
   const citem = document.getElementById(iname);
   citem.innerHTML = iname.toUpperCase() +" "+iprice + " " + "Quantity: " +quantity[iname];
+}
+
+function deleteAll(){
+  var val = confirm("Are You Sure?");
+  if(val == true){
+    priceinit();
+    total = 0;
+    const totaldiv = document.getElementById("totalh2");
+    totaldiv.innerHTML = "TOTAL AMOUNT: " + total.toString();
+    const cartclear = document.getElementById("cartList");
+    cartclear.innerHTML = '';
+  }
 }
